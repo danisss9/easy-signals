@@ -1,0 +1,51 @@
+{
+  "name": "easy-signals",
+  "version": "0.1.0",
+  "description": "Easy Signals is a signal library with no dependencies for node, deno and browsers.",
+  "homepage": "https://github.com/danisss9/easy-signals#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danisss9/easy-signals.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danisss9/easy-signals/issues"
+  },
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "easy",
+    "signals",
+    "change",
+    "changes",
+    "detect",
+    "detection",
+    "observable",
+    "rxjs",
+    "computed",
+    "node",
+    "nodejs",
+    "deno",
+    "bun",
+    "browser",
+    "angular",
+    "ng",
+    "react",
+    "preact",
+    "vue",
+    "javascript",
+    "typescript",
+    "core",
+    "js",
+    "ts"
+  ],
+  "scripts": {
+    "release": "npm run compile:lib && npm run publish:lib && npm run clean:lib",
+    "compile:lib": "tsc --project ./src/tsconfig.json",
+    "publish:lib": "npm publish --access public",
+    "clean:lib": "del *.d.ts && del *.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
